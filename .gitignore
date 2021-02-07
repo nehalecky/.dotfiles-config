@@ -1,0 +1,6 @@
+.dotfiles-config
+.CFUserTextEncoding
+.DS_Store
+.Trash
+.cache
+.zsh_sessions
