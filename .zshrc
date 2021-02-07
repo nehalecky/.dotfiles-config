@@ -1,0 +1,1 @@
+/Users/nehalecky/.zprezto/runcoms/zshrc
