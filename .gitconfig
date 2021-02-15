@@ -1,7 +1,7 @@
 [user]
 	name = Nicholaus Halecky
 	email = nehalecky@gmail.com
-	signingkey = nehalecky@gmail.com
+	signingkey = BD37C15A857588C0
 [core]
 	excludesfile = /Users/nehalecky/.gitignore_global
 	editor = atom --wait
@@ -48,6 +48,7 @@
 	fame = python -m gitfame
 [commit]
 	template = /Users/nehalecky/.git-message-template
+	gpgsign = true
 [push]
 	default = simple
 [remote-hg]
