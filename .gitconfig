@@ -1,7 +1,16 @@
+
 [user]
 	name = Nicholaus Halecky
 	email = nehalecky@gmail.com
 	signingkey = BD37C15A857588C0
+	# signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGfxtbZHZuHkiMv2ZXR52KSwROrTXK0wyxoX8yd88Ih6
+
+#[gpg]
+#  format = ssh
+
+#[gpg "ssh"]
+#  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+
 [core]
 	excludesfile = /Users/nehalecky/.gitignore_global
 	editor = atom --wait
@@ -67,6 +76,7 @@
 	smudge = git hawser smudge %f
 	required = true
 [filter "lfs"]
-	clean = git-lfs clean %f
-	smudge = git-lfs smudge %f
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
 	required = true
+	process = git-lfs filter-process
