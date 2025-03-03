@@ -2,14 +2,15 @@
 [user]
 	name = Nicholaus Halecky
 	email = nehalecky@gmail.com
-	signingkey = BD37C15A857588C0
-	# signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGfxtbZHZuHkiMv2ZXR52KSwROrTXK0wyxoX8yd88Ih6
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIGfxtbZHZuHkiMv2ZXR52KSwROrTXK0wyxoX8yd88Ih6
 
-#[gpg]
-#  format = ssh
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
 
-#[gpg "ssh"]
-#  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
 
 [core]
 	excludesfile = /Users/nehalecky/.gitignore_global
@@ -56,7 +57,7 @@
     l = log --graph --pretty=format:'%C(yellow)%h%C(cyan)%d%Creset %s %C(white)- %an, %ar%Creset'
 	fame = python -m gitfame
 [commit]
-	template = /Users/nehalecky/.git-message-template
+	template = ~/.git-message-template
 	gpgsign = true
 [push]
 	default = simple
