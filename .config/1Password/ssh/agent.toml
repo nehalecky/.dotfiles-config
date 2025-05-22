@@ -1,0 +1,10 @@
+# 1Password SSH Agent Configuration
+# This controls which SSH keys the agent offers to SSH servers
+
+# Only offer the GitHub authentication key first
+[[ssh-keys]]
+item = "Nico Personal GitHub Auth Key"
+
+# Then offer the signing key for other purposes
+[[ssh-keys]]
+item = "Github Signing Key (Nico Personal)"
